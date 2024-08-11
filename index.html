@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antoni Wrzesinski</title>
+    <link rel="stylesheet" href="style.css" class="stylsheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#projects">Projects</a></li>
+        </ul>
+    </nav>
+   <img src="images/neofetch.png" alt="" class="neofetch" >
+   <script>
+    function toggleMenu() {
+        const nav = document.querySelector('nav ul');
+        const hamburger = document.querySelector('.hamburger');
+        nav.classList.toggle('open');
+        hamburger.classList.toggle('open');
+    }
+
+    function updateNeofetchImage() {
+        const neofetchImage = document.querySelector('.neofetch');
+        if (window.innerWidth <= 820) { // Adjusted to include tablets
+            neofetchImage.classList.add('mobile');
+        } else {
+            neofetchImage.classList.remove('mobile');
+        }
+    }
+
+    window.addEventListener('resize', updateNeofetchImage);
+    window.addEventListener('load', updateNeofetchImage);
+</script>
+
+
+</body>
+</html>

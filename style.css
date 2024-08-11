@@ -1,0 +1,322 @@
+/* General Styles */
+html {
+    background-image: url('images/Background.png');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow-y: auto;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Anonymous Pro", monospace;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+ul {
+    margin-top: 80px;
+    float: right;
+    list-style-type: none;
+    padding: 0;
+    width: 230px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.7);
+    height: 100vh;
+    justify-content: flex-start;
+    align-items: flex-start;
+    transition: transform 0.3s ease-in-out;
+}
+
+li {
+    width: 100%;
+}
+
+li a {
+    display: block;
+    color: #ffffff;
+    padding: 15px 20px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+li a.active {
+    background-color: #ff3131;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+.neofetch {
+    -webkit-user-drag: none;
+    user-select: none;
+    pointer-events: none;
+    display: block;
+    margin: 80px auto;
+    width: 70%;
+    max-width: 900px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Hamburger Menu for Mobile and Tablets */
+.hamburger {
+    display: none;
+    font-size: 30px;
+    color: white;
+    padding: 15px;
+    cursor: pointer;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 1100;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Responsive Styles */
+
+/* Mobile Devices and Tablets */
+/* General Styles and Existing Code Remain Unchanged */
+
+/* Adjusted Media Queries to Include Tablets */
+@media screen and (max-width: 700px) { /* Updated max-width */
+    .hamburger {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        width: 60%;
+        height: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    ul.open {
+        transform: translateX(0%);
+    }
+
+    .hamburger.open {
+        transform: translateX(-60%);
+        right: auto;
+        left: calc(60% + 15px);
+    }
+
+    li a {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+
+    .neofetch {
+        margin-top: 50px;
+        width: 95%;
+    }
+
+    .neofetch.mobile {
+        content: url('images/neofetchforphone.png');
+        width: 90%;
+        margin-top: 30px;
+    }
+}
+/*ipad mini*/
+@media screen and (min-width: 750px) and (max-width: 800px) {
+    .hamburger {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        width: 60%;
+        height: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    li a{
+        font-size: 30px;
+    }
+
+    ul.open {
+        transform: translateX(0%);
+    }
+
+    .hamburger.open {
+        transform: translateX(-60%);
+        right: auto;
+        left: calc(60% + 15px);
+    }
+    .neofetch.mobile {
+        content: url('images/neofetchforphone.png');
+        width: 70%;
+        margin-top: 50px;
+    }
+}
+/*ipad air*/
+@media screen and (min-width: 800px) and (max-width: 900px) {
+    .hamburger {
+        display: block;
+        height: 50px;
+    }
+
+    ul {
+        position: fixed;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        width: 60%;
+        height: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    li a{
+        font-size: 30px;
+    }
+
+    ul.open {
+        transform: translateX(0%);
+    }
+
+    .hamburger.open {
+        transform: translateX(-60%);
+        right: auto;
+        left: calc(60% + 15px);
+    }
+    .neofetch.mobile {
+        content: url('images/neofetchforphone.png');
+        width: 70%;
+        margin-top: 90px;
+    }
+}
+/*ipad pro*/
+@media screen and (min-height: 1300px) and (max-height: 1367px) {
+    .hamburger {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        width: 60%;
+        height: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transition: transform 0.3s ease-in-out;
+    }
+    li a{
+        font-size: 40px;
+    }
+
+    ul.open {
+        transform: translateX(0%);
+    }
+
+    .hamburger.open {
+        transform: translateX(-60%);
+        right: auto;
+        left: calc(60% + 15px);
+    }
+    .neofetch.mobile {
+        content: url('images/neofetchforphone.png');
+        width: 70%;
+        margin-top: 90px;
+    }
+}
+/*Surface Pro 7*/
+@media screen and (min-height: 1367px) and (max-height: 1368px) {
+    .hamburger {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        width: 60%;
+        height: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transition: transform 0.3s ease-in-out;
+    }
+
+    ul.open {
+        transform: translateX(0%);
+    }
+    li a{
+        font-size: 40px;
+    }
+
+    .hamburger.open {
+        transform: translateX(-60%);
+        right: auto;
+        left: calc(60% + 15px);
+    }
+    .neofetch.mobile {
+        content: url('images/neofetchforphone.png');
+        width: 70%;
+        margin-top: 90px;
+    }
+}
+/*Surface Duo*/
+@media screen and (min-height: 720px) and (max-height:720px) {
+    .hamburger {
+        display: block;
+    }
+
+    ul {
+        position: fixed;
+        top: 0;
+        right: 0;
+        transform: translateX(100%);
+        width: 60%;
+        height: 100%;
+        justify-content: flex-start;
+        align-items: flex-start;
+        transition: transform 0.3s ease-in-out;
+    }
+    li a{
+        font-size: 20px;
+    }
+
+    ul.open {
+        transform: translateX(0%);
+    }
+
+    .hamburger.open {
+        transform: translateX(-60%);
+        right: auto;
+        left: calc(60% + 15px);
+    }
+    .neofetch.mobile {
+        content: url('images/neofetchforphone.png');
+        width: 65%;
+        margin-top: 90px;
+    }
+}
