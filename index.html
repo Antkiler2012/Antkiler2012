@@ -13,23 +13,21 @@
     <nav>
         <div class="hamburger" onclick="toggleMenu()">&#9776;</div>
         <ul>
-            <li><a class="active" href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#projects">Projects</a></li>
+            <li><a class="active" href="index.html">Home</a></li>
+            <li><a href="About.html">About</a></li>
+            <li><a href="projects.html">Projects</a></li>
         </ul>
     </nav>
    <img src="images/neofetch.png" alt="" class="neofetch" >
    <script>
     function toggleMenu() {
         const nav = document.querySelector('nav ul');
-        const hamburger = document.querySelector('.hamburger');
         nav.classList.toggle('open');
-        hamburger.classList.toggle('open');
     }
 
     function updateNeofetchImage() {
         const neofetchImage = document.querySelector('.neofetch');
-        if (window.innerWidth <= 820) { // Adjusted to include tablets
+        if (window.innerWidth <= 1024) { // Adjusted to include tablets
             neofetchImage.classList.add('mobile');
         } else {
             neofetchImage.classList.remove('mobile');
