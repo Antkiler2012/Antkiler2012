@@ -512,4 +512,171 @@ h1 {
 
 .contact-info a:hover {
     color: #007bff;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .info-sections {
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .experience-section, .about-section {
+        width: 100%;
+    }
+
+    .blue-curve {
+        width: 300px;
+        height: 300px;
+        top: -50px;
+        left: -50px;
+    }
+
+    nav ul {
+        padding: 1rem 3rem;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+    }
+
+    .role h2 {
+        font-size: 2.8rem;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .role h2 {
+        font-size: 2.2rem;
+    }
+
+    .hero {
+        padding-top: 6rem;
+    }
+
+    nav ul {
+        gap: 3rem;
+        padding: 0.8rem 2rem;
+    }
+
+    nav a {
+        font-size: 1.1rem;
+    }
+
+    .experience-content .number {
+        font-size: 6rem;
+    }
+
+    .experience-content .text {
+        font-size: 3rem;
+    }
+
+    .about-content h2 {
+        font-size: 2rem;
+    }
+
+    .contact-content {
+        padding: 2rem;
+        margin: 1rem;
+    }
+
+    .contact-title {
+        font-size: 2.5rem;
+    }
+
+    .contact-item {
+        padding: 1.2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    main {
+        padding: 0 1rem;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .role h2 {
+        font-size: 1.8rem;
+    }
+
+    nav ul {
+        gap: 2rem;
+        padding: 0.8rem 1.5rem;
+    }
+
+    nav a {
+        font-size: 1rem;
+    }
+
+    .cta-button {
+        padding: 0.8rem 1.5rem;
+        font-size: 1rem;
+    }
+
+    .experience-content .number {
+        font-size: 5rem;
+    }
+
+    .experience-content .text {
+        font-size: 2.5rem;
+    }
+
+    .about-content {
+        padding: 1.5rem;
+    }
+
+    .about-content h2 {
+        font-size: 1.8rem;
+    }
+
+    .about-content h3 {
+        font-size: 1rem;
+    }
+
+    .info-item {
+        gap: 0.8rem;
+    }
+
+    .info-item i {
+        font-size: 1.2rem;
+    }
+
+    .info-item p {
+        font-size: 0.9rem;
+    }
+
+    .contact-title {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+
+    .contact-item {
+        padding: 1rem;
+    }
+
+    .contact-item i {
+        font-size: 1.5rem;
+    }
+
+    .contact-info h3 {
+        font-size: 1rem;
+    }
+
+    .contact-info a,
+    .contact-info p {
+        font-size: 0.9rem;
+    }
+
+    .tech-icons img {
+        width: 32px;
+        height: 32px;
+    }
 } 
