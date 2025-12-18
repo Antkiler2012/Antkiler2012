@@ -9,7 +9,7 @@
 
 - 💬 Ask me about **Front-end**
 
-- 📫 How to reach me **a.wrzesinski1@gmail.com**
+- 📫 How to reach me **antre3@proton.me**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
