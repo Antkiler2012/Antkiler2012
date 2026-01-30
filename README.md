@@ -1,6 +1,8 @@
 <h1 align="center">Hi 👋, I'm Antoni</h1>
 <h3 align="center">A passionate frontend developer from Poland</h3>
 
+https://github-readme-stats.hackclub.dev/api/wakatime?username=21059&api_domain=hackatime.hackclub.com&&custom_title=Hackatime+Stats&layout=compact&cache_seconds=0&langs_count=8&theme=dracula
+
 - 🔭 I’m currently working on **Near Me app**
 
 - 🌱 I’m currently learning **Unity, Typescript**
